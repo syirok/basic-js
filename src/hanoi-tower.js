@@ -1,4 +1,12 @@
-module.exports = function calculateHanoi(/* disksNumber, turnsSpeed */) {
-    throw 'Not implemented';
-    // remove line with error and write your code here
+module.exports = function calculateHanoi(disksNumber, turnsSpeed) {
+    let turns = Math.pow(2, disksNumber)-1;
+    let sec = turns / (turnsSpeed / 3600);
+
+    let obj = {
+        "turns": turns,
+        "seconds": sec
+    }
+
+
+return obj;
 }
